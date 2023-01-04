@@ -1,8 +1,8 @@
-import { Canvas } from "@react-three/fiber";
-import { Leva } from "leva";
-import { StrictMode } from "react";
-import * as THREE from "three";
-import Experience2 from "./Experience2";
+import { Canvas } from '@react-three/fiber';
+import { Leva } from 'leva';
+import { StrictMode } from 'react';
+import * as THREE from 'three';
+import Experience2 from './Experience2';
 
 function App() {
   const cameraSettings = {
@@ -19,7 +19,7 @@ function App() {
   return (
     <StrictMode>
       <Leva collapsed />
-      <Canvas shadows gl={{ antialias: true }} camera={cameraSettings} onCreated={created}>
+      <Canvas shadows={false} gl={{ antialias: true }} camera={cameraSettings} onCreated={created}>
         <Experience2 />
       </Canvas>
     </StrictMode>
